@@ -1,36 +1,30 @@
 import Image from "next/image";
-import { PlayCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 export function FeaturedProject() {
   return (
-    <section id="featured" className="py-20 md:py-28 bg-card/50">
+    <section id="featured" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Featured Project: The Quantum Spire</h2>
-        <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="relative group cursor-pointer rounded-lg overflow-hidden shadow-2xl">
-            <Card className="overflow-hidden border-0">
-                <Image
-                  src="https://placehold.co/1200x800.png"
-                  alt="Featured Project Thumbnail"
-                  width={1200}
-                  height={800}
-                  className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
-                  data-ai-hint="futuristic architecture building"
-                />
-            </Card>
-            <div className="absolute inset-0 flex items-center justify-center bg-black/40 group-hover:bg-black/30 transition-colors">
-              <PlayCircle className="w-20 h-20 text-white/80 group-hover:text-white group-hover:scale-110 transition-all duration-300" />
-            </div>
-          </div>
-          <div className="text-lg">
-            <h3 className="text-2xl font-semibold mb-4">Project Overview</h3>
-            <p className="text-muted-foreground mb-4 leading-relaxed">
-              The Quantum Spire is a paradigm-shifting residential tower concept that leverages generative design and sustainable materials. Its dynamic facade adapts to environmental conditions, optimizing energy consumption while creating a living, breathing structure.
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary">Featured Project: The GenAI Architecture Reviewer</h2>
+          <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10">
+              <Image
+                src="https://placehold.co/1200x675.png"
+                alt="GenAI Architecture Reviewer Screenshot"
+                width={1200}
+                height={675}
+                className="w-full h-auto object-cover"
+                data-ai-hint="application screenshot dashboard"
+              />
+          </Card>
+          <div className="text-lg text-left max-w-3xl mx-auto">
+            <p className="text-muted-foreground mb-6 leading-relaxed">
+              A full-stack Python application that acts as an AI co-pilot for systems architecture. It provides instant, expert-level feedback on design plans, supports both cloud and local LLMs, and was built to accelerate my own iterative design workflow.
             </p>
-            <p className="text-muted-foreground leading-relaxed">
-              This project explored parametric modeling to create a unique lattice structure, ensuring both aesthetic appeal and structural integrity. The embedded video showcases the design process from initial concept sketches to detailed 3D renderings and simulations.
-            </p>
+            <a href="#github" className="inline-flex items-center font-semibold text-primary hover:underline">
+              Explore the Project on GitHub <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
           </div>
         </div>
       </div>
