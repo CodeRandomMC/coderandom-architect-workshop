@@ -1,7 +1,7 @@
 'use client';
 
 import { Button } from "@/components/ui/button";
-import { Github, Video } from "lucide-react";
+import { Github } from "lucide-react";
 
 export function Introduction() {
   return (
@@ -17,12 +17,6 @@ export function Introduction() {
             <a href="#github">
               <Github className="mr-2" />
               View My Workshop (GitHub)
-            </a>
-          </Button>
-          <Button size="lg" variant="secondary" asChild>
-            <a href="#featured">
-              <Video className="mr-2" />
-              See My Process (Video Demo)
             </a>
           </Button>
         </div>

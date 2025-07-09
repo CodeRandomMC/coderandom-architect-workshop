@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
@@ -8,15 +7,14 @@ export function FeaturedProject() {
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary">Featured Project: The VelocityAI Architecture Reviewer</h2>
-          <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10">
-              <Image
-                src="https://placehold.co/1200x675.png"
-                alt="VelocityAI Architecture Reviewer Screenshot"
-                width={1200}
-                height={675}
-                className="w-full h-auto object-cover"
-                data-ai-hint="application screenshot dashboard"
-              />
+          <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10 aspect-video">
+            <iframe
+              className="w-full h-full"
+              src="https://www.loom.com/embed/0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"
+              title="Project Video Showcase"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            ></iframe>
           </Card>
           <div className="text-lg text-left max-w-3xl mx-auto">
             <p className="text-muted-foreground mb-6 leading-relaxed">
