@@ -1,13 +1,8 @@
 import { Github, Linkedin, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { socialLinks } from "./social-links";
 
 export function ContactFooter() {
-  const socialLinks = [
-    { name: "LinkedIn", icon: Linkedin, url: "#" },
-    { name: "GitHub", icon: Github, url: "#github" },
-    { name: "Email", icon: Mail, url: "mailto:example@example.com" },
-  ];
-
   return (
     <footer id="contact" className="py-8 bg-background border-t border-border/50">
       <div className="container mx-auto px-4 flex flex-col items-center gap-4">

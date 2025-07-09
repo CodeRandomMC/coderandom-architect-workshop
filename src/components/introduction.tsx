@@ -2,8 +2,11 @@
 
 import { Button } from "@/components/ui/button";
 import { Github } from "lucide-react";
+import { socialLinks } from "./social-links";
 
 export function Introduction() {
+  const github_link = socialLinks.find((link) => link.name === "GitHub");
+
   return (
     <section className="py-24 md:py-40 bg-background text-foreground min-h-[80vh] flex items-center">
       <div className="container mx-auto px-4 text-center">
@@ -14,7 +17,7 @@ export function Introduction() {
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button size="lg" asChild>
-            <a href="#github">
+            <a href={github_link!.url} target="_blank" rel="noopener noreferrer" aria-label={github_link!.name}>
               <Github className="mr-2" />
               View My Workshop (GitHub)
             </a>
