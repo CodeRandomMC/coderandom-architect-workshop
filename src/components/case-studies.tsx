@@ -1,22 +1,25 @@
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { FileText } from "lucide-react";
+import { FileText, Github } from "lucide-react";
 
 const caseStudies = [
   {
     title: "The LLM Guardian Cluster",
     description: "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability.",
     pdfUrl: "#",
+    github: "#"
   },
   {
     title: "KidsAI/Life Co-pilot Mission",
     description: "A mission statement and technical overview for an AI designed to support child development and lifelong learning.",
     pdfUrl: "#",
+    github: "#"
   },
   {
     title: "The Medical Guardian",
     description: "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support.",
     pdfUrl: "#",
+    github: "#"
   },
 ];
 
@@ -39,6 +42,14 @@ export function CaseStudies() {
                   <a href={study.pdfUrl} download>
                     <FileText className="mr-2 h-4 w-4" />
                     Read the Blueprint (PDF)
+                  </a>
+                </Button>
+              </CardContent>
+              <CardContent className="mt-auto">
+                <Button asChild variant="default" className="w-full">
+                  <a href={study.github} download>
+                    <Github className="mr-2 h-4 w-4" />
+                    In the workshop (GitHub)
                   </a>
                 </Button>
               </CardContent>

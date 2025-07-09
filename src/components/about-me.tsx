@@ -7,7 +7,7 @@ export function AboutMe() {
         <div className="flex flex-col lg:flex-row items-start justify-center gap-12 lg:gap-20">
           <div className="lg:sticky top-28 flex-shrink-0 mx-auto">
             <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-primary/50 shadow-lg">
-              <AvatarImage src="https://placehold.co/400x400.png" alt="Headshot" data-ai-hint="professional headshot" />
+              <AvatarImage src="/android-chrome-512x512.png" alt="Headshot" data-ai-hint="professional headshot" />
               <AvatarFallback>JP</AvatarFallback>
             </Avatar>
           </div>
