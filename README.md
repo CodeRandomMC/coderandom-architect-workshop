@@ -1,6 +1,6 @@
 # Jack Pollard | Architect's Workshop
 
-This is the source code for my personal portfolio website, built with Next.js and deployed on Firebase.
+This is the source code for my personal portfolio website, built with Next.js and deployed on Vercel.
 
 The website is designed to be a clean, minimalist, and functional showcase of my work as an AI-Augmented, High-Velocity Systems Architect.
 
