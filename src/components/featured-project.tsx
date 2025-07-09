@@ -7,11 +7,11 @@ export function FeaturedProject() {
     <section id="featured" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary">Featured Project: The GenAI Architecture Reviewer</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-primary">Featured Project: The VelocityAI Architecture Reviewer</h2>
           <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10">
               <Image
                 src="https://placehold.co/1200x675.png"
-                alt="GenAI Architecture Reviewer Screenshot"
+                alt="VelocityAI Architecture Reviewer Screenshot"
                 width={1200}
                 height={675}
                 className="w-full h-auto object-cover"

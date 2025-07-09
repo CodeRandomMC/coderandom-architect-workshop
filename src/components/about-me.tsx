@@ -47,7 +47,7 @@ export function AboutMe() {
                   <li><strong>Iterate:</strong> Refine the design with expert-level feedback in minutes, not months.</li>
                 </ol>
                 <p>
-                  The <strong>GenAI Architecture Reviewer</strong> on my GitHub is a tangible product of this exact workflow. I don't just use tools; I build meta-tools that improve the very process of creation.
+                  The <strong>VelocityAI Architecture Reviewer</strong> on my GitHub is a tangible product of this exact workflow. I don't just use tools; I build meta-tools that improve the very process of creation.
                 </p>
               </div>
             </div>
