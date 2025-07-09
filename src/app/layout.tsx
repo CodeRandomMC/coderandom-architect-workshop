@@ -11,7 +11,7 @@ const inter = Inter({
 
 
 export const metadata: Metadata = {
-  title: "CodeRandom Architect's Workshop",
+  title: "Jack Pollard | Architect's Workshop",
   description: "Portfolio of an AI-Augmented, High-Velocity Systems Architect.",
 };
 

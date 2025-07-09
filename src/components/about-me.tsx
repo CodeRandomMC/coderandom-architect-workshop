@@ -7,7 +7,7 @@ export function AboutMe() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 md:gap-16">
           <Avatar className="w-48 h-48 md:w-64 md:h-64 border-4 border-primary/50 shadow-lg">
             <AvatarImage src="https://placehold.co/400x400.png" alt="Headshot" data-ai-hint="professional headshot" />
-            <AvatarFallback>CW</AvatarFallback>
+            <AvatarFallback>JP</AvatarFallback>
           </Avatar>
           <div className="max-w-2xl text-center md:text-left">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">My Journey: Forged in Chaos, Focused on Stability</h2>

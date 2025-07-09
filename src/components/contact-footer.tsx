@@ -21,7 +21,7 @@ export function ContactFooter() {
                 </Button>
             ))}
         </div>
-        <p className="text-sm text-muted-foreground/60">&copy; {new Date().getFullYear()} CodeRandom Architect's Workshop. All Rights Reserved.</p>
+        <p className="text-sm text-muted-foreground/60">&copy; {new Date().getFullYear()} Jack Pollard. All Rights Reserved.</p>
       </div>
     </footer>
   );
