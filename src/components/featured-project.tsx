@@ -18,7 +18,7 @@ export function FeaturedProject() {
           </Card>
           <div className="text-lg text-left max-w-3xl mx-auto">
             <p className="text-muted-foreground mb-6 leading-relaxed">
-              A full-stack Python application that acts as an AI co-pilot for systems architecture. It provides instant, expert-level feedback on design plans, supports both cloud and local LLMs, and was built to accelerate my own iterative design workflow.
+              A full-stack Python application that acts as an AI co-pilot for systems architecture. It provides instant, expert-level feedback on design plans, supports both cloud and local LLMs, and was built to accelerate my own iterative design workflow. And a showcase what i can do from idea to concept in a few hours.
             </p>
             <a href="#github" className="inline-flex items-center font-semibold text-primary hover:underline">
               Explore the Project on GitHub <ArrowRight className="ml-2 h-4 w-4" />
