@@ -21,7 +21,7 @@ const caseStudies = [
     description:
       "A proof-of-concept for building AI systems worthy of a child's trust. Features a two-stage guardian pipeline, stateless design, and safety-by-design architecture that eliminates attack surfaces rather than filtering them.",
     pdfUrl: "#",
-    github: "#",
+    github: "https://github.com/CodeRandomMC/KidsAI",
   },
   {
     title: "The Medical Guardian",
