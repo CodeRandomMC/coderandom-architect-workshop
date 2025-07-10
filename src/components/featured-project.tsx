@@ -1,46 +1,29 @@
-import { ArrowRight } from "lucide-react";
-import { Card } from "@/components/ui/card";
+import { ProjectShowcase } from "./project-showcase";
 
 export function FeaturedProject() {
   return (
-    <section id="featured" className="py-20 md:py-28 bg-background">
-      <div className="container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-primary">
-            Featured Project: VelocityAI Architecture Reviewer
-          </h2>
-          <p className="text-xl text-muted-foreground mb-12">
-            Built in hours, not days - showcasing rapid development capabilities
-          </p>
-          <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10 aspect-video">
-            <iframe
-              className="w-full h-full"
-              src="https://www.loom.com/embed/0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f"
-              title="Project Video Showcase"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </Card>
-          <div className="text-lg text-left max-w-3xl mx-auto">
-            <p className="text-muted-foreground mb-6 leading-relaxed">
-              A full-stack Python application that acts as an AI co-pilot for
-              systems architecture, providing instant expert-level feedback on
-              design plans. Built from concept to deployment in just a few
-              hours, this project demonstrates my ability to rapidly prototype
-              and deliver production-ready solutions. Features both cloud and
-              local LLM support, and showcases end-to-end development velocity
-              that directly translates to real-world impact.
-            </p>
-            <a
-              href="#github"
-              className="inline-flex items-center font-semibold text-primary hover:underline"
-            >
-              Explore the Project on GitHub{" "}
-              <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <ProjectShowcase
+      id="featured"
+      title="Featured Project: VelocityAI Architecture Reviewer"
+      subtitle="Built in hours, not days - showcasing rapid development capabilities"
+      description="A full-stack Python application that acts as an AI co-pilot for systems architecture, providing instant expert-level feedback on design plans. Built from concept to deployment in just a few hours, this project demonstrates my ability to rapidly prototype and deliver production-ready solutions. Features both cloud and local LLM support, and showcases end-to-end development velocity that directly translates to real-world impact."
+      linkText="Explore the Project on GitHub"
+      linkHref="https://github.com/CodeRandomMC/VelocityAI-A-Systems-Architect-Co-Pilot"
+      backgroundColor="default"
+      images={[
+        {
+          src: "/velocity-ai/velocity_ai.png",
+          alt: "VelocityAI main interface",
+        },
+        {
+          src: "/velocity-ai/local_llm_support.png",
+          alt: "Local LLM support feature",
+        },
+        {
+          src: "/velocity-ai/export_showcase.png",
+          alt: "Export functionality showcase",
+        },
+      ]}
+    />
   );
 }
