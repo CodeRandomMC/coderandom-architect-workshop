@@ -9,13 +9,14 @@ The website is designed to be a clean, minimalist, and functional showcase of my
 - **Framework:** Next.js
 - **Language:** TypeScript
 - **Styling:** Tailwind CSS & ShadCN UI
-- **Deployment:** Firebase App Hosting
+- **Deployment:** Vercel
 
 ## Running Locally
 
 To run the project locally, follow these steps:
 
 1.  **Install dependencies:**
+
     ```bash
     npm install
     ```
