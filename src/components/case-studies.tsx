@@ -1,25 +1,34 @@
-import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle,
+  CardDescription,
+} from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Github } from "lucide-react";
 
 const caseStudies = [
   {
     title: "The LLM Guardian Cluster",
-    description: "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability.",
+    description:
+      "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability.",
     pdfUrl: "#",
-    github: "#"
+    github: "#",
   },
   {
-    title: "KidsAI/Life Co-pilot Mission",
-    description: "A mission statement and technical overview for an AI designed to support child development and lifelong learning.",
+    title: "KidsAI Safety Architecture",
+    description:
+      "A proof-of-concept for building AI systems worthy of a child's trust. Features a two-stage guardian pipeline, stateless design, and safety-by-design architecture that eliminates attack surfaces rather than filtering them.",
     pdfUrl: "#",
-    github: "#"
+    github: "#",
   },
   {
     title: "The Medical Guardian",
-    description: "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support.",
+    description:
+      "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support.",
     pdfUrl: "#",
-    github: "#"
+    github: "#",
   },
 ];
 
@@ -27,15 +36,24 @@ export function CaseStudies() {
   return (
     <section id="case-studies" className="py-20 md:py-28 bg-card/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">Architectural Case Studies</h2>
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
+          Architectural Case Studies
+        </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
-            <Card key={index} className="flex flex-col bg-background border-border/80 transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-1">
+            <Card
+              key={index}
+              className="flex flex-col bg-background border-border/80 transition-all duration-300 hover:shadow-primary/20 hover:shadow-lg hover:-translate-y-1"
+            >
               <CardHeader>
-                <CardTitle className="text-xl text-foreground">{study.title}</CardTitle>
+                <CardTitle className="text-xl text-foreground">
+                  {study.title}
+                </CardTitle>
               </CardHeader>
               <CardContent className="flex-grow">
-                <CardDescription className="leading-relaxed">{study.description}</CardDescription>
+                <CardDescription className="leading-relaxed">
+                  {study.description}
+                </CardDescription>
               </CardContent>
               <CardContent className="mt-auto">
                 <Button asChild variant="secondary" className="w-full">
