@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, ChevronLeft, ChevronRight } from "lucide-react";
+import { ArrowRight, ChevronLeft, ChevronRight, Expand } from "lucide-react";
 import { Card } from "@/components/ui/card";
 import {
   Carousel,
@@ -10,6 +10,7 @@ import {
   CarouselPrevious,
   type CarouselApi,
 } from "@/components/ui/carousel";
+import { ImageLightbox } from "@/components/ui/image-lightbox";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 
@@ -45,6 +46,21 @@ export function ProjectShowcase({
   const [api, setApi] = useState<CarouselApi>();
   const [current, setCurrent] = useState(0);
   const [count, setCount] = useState(0);
+  const [lightboxOpen, setLightboxOpen] = useState(false);
+  const [lightboxImage, setLightboxImage] = useState<{
+    src: string;
+    alt: string;
+  } | null>(null);
+
+  const openLightbox = (src: string, alt: string) => {
+    setLightboxImage({ src, alt });
+    setLightboxOpen(true);
+  };
+
+  const closeLightbox = () => {
+    setLightboxOpen(false);
+    setLightboxImage(null);
+  };
 
   useEffect(() => {
     if (!api) {
@@ -93,14 +109,30 @@ export function ProjectShowcase({
           mediaItems.push({
             type: "image" as const,
             content: (
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={800}
-                height={450}
-                className="w-full h-auto object-cover"
-                priority={index === 0}
-              />
+              <div className="relative group">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={800}
+                  height={450}
+                  className="w-full h-auto object-cover object-top max-h-[450px]"
+                  priority={index === 0}
+                />
+                {/* Expand Button Overlay */}
+                <button
+                  onClick={() => openLightbox(image.src, image.alt)}
+                  className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+                  aria-label="View full image"
+                >
+                  <div className="bg-white/90 hover:bg-white text-black p-3 rounded-full shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                    <Expand className="h-6 w-6" />
+                  </div>
+                </button>
+                {/* Preview Badge */}
+                <div className="absolute top-3 right-3 bg-black/60 text-white px-2 py-1 rounded text-xs">
+                  Click to view full image
+                </div>
+              </div>
             ),
           });
         });
@@ -177,15 +209,31 @@ export function ProjectShowcase({
     // Single image only
     if (hasImages && images!.length === 1 && !hasVideo) {
       return (
-        <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10">
-          <Image
-            src={images![0].src}
-            alt={images![0].alt}
-            width={800}
-            height={450}
-            className="w-full h-auto object-cover"
-            priority
-          />
+        <Card className="overflow-hidden border-2 border-border mb-8 shadow-2xl shadow-primary/10 relative group">
+          <div className="relative">
+            <Image
+              src={images![0].src}
+              alt={images![0].alt}
+              width={800}
+              height={450}
+              className="w-full h-auto object-cover object-top max-h-[450px]"
+              priority
+            />
+            {/* Expand Button Overlay */}
+            <button
+              onClick={() => openLightbox(images![0].src, images![0].alt)}
+              className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center opacity-0 group-hover:opacity-100"
+              aria-label="View full image"
+            >
+              <div className="bg-white/90 hover:bg-white text-black p-4 rounded-full shadow-lg transform scale-90 group-hover:scale-100 transition-transform duration-300">
+                <Expand className="h-8 w-8" />
+              </div>
+            </button>
+            {/* Preview Badge */}
+            <div className="absolute top-4 right-4 bg-black/60 text-white px-3 py-2 rounded text-sm">
+              Click to view full image
+            </div>
+          </div>
         </Card>
       );
     }
@@ -230,6 +278,17 @@ export function ProjectShowcase({
           </div>
         </div>
       </div>
+
+      {/* Image Lightbox */}
+      {lightboxOpen && lightboxImage && (
+        <ImageLightbox
+          key={`lightbox-${id}-${lightboxImage.src}`}
+          isOpen={lightboxOpen}
+          onClose={closeLightbox}
+          src={lightboxImage.src}
+          alt={lightboxImage.alt}
+        />
+      )}
     </section>
   );
 }

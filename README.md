@@ -1,29 +1,83 @@
 # Jack Pollard | Architect's Workshop
 
-This is the source code for my personal portfolio website, built with Next.js and deployed on Vercel.
+> **⚡ Built in <12 hours** - A demonstration of rapid AI application development and modern web architecture
+> Open [CodeRandom](http://coderandom.com) to view my portfolio.
 
-The website is designed to be a clean, minimalist, and functional showcase of my work as an AI-Augmented, High-Velocity Systems Architect.
+This portfolio showcases my ability to rapidly prototype and deploy full-stack AI applications, featuring my mission project "Life Co-Pilot" and the KidsAI implementation.
 
-## Tech Stack
+## 🎯 Project Goals
 
-- **Framework:** Next.js
+This project was built to demonstrate:
+
+- **Rapid Development Skills**: Complete portfolio + AI project in under 12 hours
+- **Technical Proficiency**: Modern full-stack development with production-ready code
+- **AI-First Mindset**: Building helpful, harmless, and honest AI applications
+
+## 🚀 What Was Built in 12 Hours
+
+### Portfolio Website
+
+- ✅ Modern Next.js 15 application with TypeScript
+- ✅ Responsive design with Tailwind CSS + Radix UI components
+- ✅ Accessibility-first approach with semantic HTML
+- ✅ Component-driven architecture with reusable UI elements
+- ✅ Performance optimized with Next.js Image optimization
+- ✅ Interactive carousel for project showcases
+- ✅ Contact forms with validation using React Hook Form + Zod
+
+### KidsAI Project
+
+- ✅ Child-safe AI interaction platform
+- ✅ Creative learning modules (Story Time, Joke Factory, Adventures)
+- ✅ Parental guidance and safety features
+- ✅ Educational content with age-appropriate design
+- ✅ Foundation ready for AI API integration
+
+## 🛠 Tech Stack
+
+- **Framework:** Next.js 15 with Turbopack
 - **Language:** TypeScript
-- **Styling:** Tailwind CSS & ShadCN UI
-- **Deployment:** Vercel
+- **Styling:** Tailwind CSS + Radix UI Components
+- **Forms:** React Hook Form + Zod validation
+- **Icons:** Lucide React
+- **Carousel:** Embla Carousel
+- **Deployment:** Vercel-ready
 
-## Running Locally
+## 🔧 Next Steps (Post 12-Hour Sprint)
 
-To run the project locally, follow these steps:
+- [ ] Integrate Claude API for AI functionality
+- [ ] Implement comprehensive testing suite (Jest + Testing Library)
+- [ ] Add real-time features with WebSockets
+- [ ] Implement user authentication and data persistence
+- [ ] Add analytics and monitoring
+- [ ] Scale for production deployment
 
-1.  **Install dependencies:**
+## 🏃‍♂️ Running Locally
 
-    ```bash
-    npm install
-    ```
+```bash
+# Install dependencies
+pnpm install
 
-2.  **Run the development server:**
-    ```bash
-    npm run dev
-    ```
+# Run development server (with Turbopack)
+pnpm dev
 
-Open [http://localhost:9002](http://localhost:9002) in your browser to see the result.
+# Build for production
+pnpm build
+
+# Type checking
+pnpm typecheck
+```
+
+Open [http://localhost:9002](http://localhost:9002) to view the portfolio.
+
+## 📞 Contact
+
+**Jack Pollard** - AI-Augmented, High-Velocity Systems Architect
+
+- 📧 Email: jack@coderandom.com
+- 💼 LinkedIn: [https://www.linkedin.com/in/jack-pollard-632362374/](https://www.linkedin.com/in/jack-pollard-632362374/)
+- 🐙 GitHub: [github.com/CodeRandomMC](https://github.com/CodeRandomMC)
+
+---
+
+_"My mission is to create AI that doesn't replace human potential, but amplifies it."_
