@@ -5,12 +5,12 @@ export function MissionProject() {
     <ProjectShowcase
       id="mission"
       title="Main Project: KidsAI (Mission Life Co-Pilot)"
-      subtitle="Built in <12 hours to demonstrate rapid AI application development"
+      subtitle="A foundational step toward safe, supportive AI for children in need"
       description={[
-        "🚀 **Development Timeline**: This entire portfolio and KidsAI project were built in under 12 hours, showcasing my ability to rapidly prototype and deploy full-stack AI applications using modern frameworks.",
-        "🤖 **AI-First Philosophy**: My mission is to create AI that doesn't replace human potential, but amplifies it. Life Co-Pilot represents my vision for AI as a supportive companion that helps people navigate life's complexities and achieve their goals.",
-        "🧠 **KidsAI Showcase**: The first implementation focuses on child development and learning - featuring safe AI interactions, creative learning modules, and parental guidance tools. This demonstrates my understanding of responsible AI deployment and age-appropriate technology design.",
-        "🔧 **Next Steps**: Ready to integrate Claude API, implement comprehensive testing suites, and scale the platform. The foundation is built for rapid iteration and feature expansion.",
+        "🎯 **Mission-Driven Development**: KidsAI represents my commitment to building AI systems that serve humanity's most vulnerable populations. This project demonstrates my approach to responsible AI development with real-world impact potential.",
+        "🤖 **AI Safety & Ethics**: Every design decision prioritizes child safety, age-appropriate interactions, and transparent AI behavior. This showcases my understanding of the critical importance of safety-first AI development, especially for vulnerable users.",
+        "🧠 **Technical Foundation**: The implementation demonstrates full-stack AI application architecture, including safe content generation, user experience design for children, and scalable system architecture that can grow with evolving AI capabilities.",
+        "🔧 **Anthropic Integration Vision**: The platform is architected specifically for Claude API integration (To be added), representing my vision for how Anthropic's safety-focused AI can be responsibly deployed in educational and developmental contexts for children.",
       ]}
       linkText="Explore KidsAI Implementation →"
       linkHref="https://github.com/CodeRandomMC/KidsAI"
