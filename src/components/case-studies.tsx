@@ -14,7 +14,7 @@ const caseStudies = [
     description:
       "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability.",
     pdfUrl: "#",
-    github: "#",
+    github: "https://github.com/CodeRandomMC/LLMGuardian",
   },
   {
     title: "KidsAI Safety Architecture",
