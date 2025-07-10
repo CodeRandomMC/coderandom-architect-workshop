@@ -28,7 +28,7 @@ const caseStudies = [
     description:
       "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support.",
     pdfUrl: "#",
-    github: "#",
+    github: "https://github.com/CodeRandomMC/MedicalDiagnosticGuardian",
   },
 ];
 
@@ -55,22 +55,37 @@ export function CaseStudies() {
                   {study.description}
                 </CardDescription>
               </CardContent>
-              <CardContent className="mt-auto">
-                <Button asChild variant="secondary" className="w-full">
-                  <a href={study.pdfUrl} download>
-                    <FileText className="mr-2 h-4 w-4" />
-                    Read the Blueprint (PDF)
-                  </a>
-                </Button>
-              </CardContent>
-              <CardContent className="mt-auto">
-                <Button asChild variant="default" className="w-full">
-                  <a href={study.github} download>
-                    <Github className="mr-2 h-4 w-4" />
-                    In the workshop (GitHub)
-                  </a>
-                </Button>
-              </CardContent>
+              {(study.pdfUrl && study.pdfUrl !== "#") ||
+              (study.github && study.github !== "#") ? (
+                <div className="space-y-3 px-6 pb-6">
+                  {study.pdfUrl && study.pdfUrl !== "#" && (
+                    <Button asChild variant="secondary" className="w-full">
+                      <a href={study.pdfUrl} download>
+                        <FileText className="mr-2 h-4 w-4" />
+                        Read the Blueprint (PDF)
+                      </a>
+                    </Button>
+                  )}
+                  {study.github && study.github !== "#" && (
+                    <Button asChild variant="default" className="w-full">
+                      <a
+                        href={study.github}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        <Github className="mr-2 h-4 w-4" />
+                        In the workshop (GitHub)
+                      </a>
+                    </Button>
+                  )}
+                </div>
+              ) : (
+                <CardContent className="mt-auto">
+                  <p className="text-sm text-muted-foreground text-center italic">
+                    Coming soon...
+                  </p>
+                </CardContent>
+              )}
             </Card>
           ))}
         </div>
