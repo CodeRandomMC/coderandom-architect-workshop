@@ -19,9 +19,6 @@ const nextConfig: NextConfig = {
     ],
     unoptimized: false,
   },
-  experimental: {
-    optimizeCss: true,
-  },
   // SEO optimizations
   trailingSlash: false,
   generateEtags: false,
