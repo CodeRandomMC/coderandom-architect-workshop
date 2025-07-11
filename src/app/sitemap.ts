@@ -2,43 +2,44 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://coderandom-architect-workshop.vercel.app";
+  const currentDate = new Date().toISOString();
 
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
+      lastModified: currentDate,
+      changeFrequency: "weekly",
       priority: 1,
     },
     {
       url: `${baseUrl}/#mission`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.8,
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/#featured`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/#case-studies`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.6,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/#about`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.5,
+      priority: 0.7,
     },
     {
       url: `${baseUrl}/#contact`,
-      lastModified: new Date(),
+      lastModified: currentDate,
       changeFrequency: "monthly",
-      priority: 0.4,
+      priority: 0.6,
     },
   ];
 }

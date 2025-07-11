@@ -1,4 +1,20 @@
 User-agent: *
 Allow: /
+Disallow: /api/
+Disallow: /_next/
+Disallow: /admin/
 
+# Specify crawl delay for better server performance
+Crawl-delay: 1
+
+# Sitemap location
 Sitemap: https://coderandom-architect-workshop.vercel.app/sitemap.xml
+
+# Additional directives for better SEO
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1

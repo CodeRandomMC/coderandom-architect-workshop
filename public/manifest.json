@@ -1,1 +1,39 @@
-{"name":"Jack Pollard | Architect's Workshop","short_name":"Jack Pollard","icons":[{"src":"/android-chrome-192x192.png","sizes":"192x192","type":"image/png"},{"src":"/android-chrome-512x512.png","sizes":"512x512","type":"image/png"}],"theme_color":"#121212","background_color":"#121212","display":"standalone"}
+{
+  "name": "Jack Pollard | AI Systems Architect Portfolio",
+  "short_name": "Jack Pollard",
+  "description": "AI Systems Architect specializing in ethical AI development and AI for kids",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0a",
+  "theme_color": "#0a0a0a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-US",
+  "icons": [
+    {
+      "src": "/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
+      "type": "image/png"
+    }
+  ],
+  "categories": ["business", "technology", "portfolio"],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

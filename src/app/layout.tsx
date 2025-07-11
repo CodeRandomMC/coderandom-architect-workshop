@@ -38,6 +38,8 @@ export const metadata: Metadata = {
   authors: [{ name: "Jack Pollard" }],
   creator: "Jack Pollard",
   publisher: "Jack Pollard",
+  category: "Technology",
+  classification: "AI Systems Architecture",
   formatDetection: {
     email: false,
     address: false,
@@ -46,6 +48,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://coderandom-architect-workshop.vercel.app"),
   alternates: {
     canonical: "/",
+  },
+  verification: {
+    google: "verification-token-will-be-added-later",
   },
   openGraph: {
     title: "Jack Pollard | AI Systems Architect & Ethical AI Developer",
@@ -99,6 +104,8 @@ export default function RootLayout({
       "AI-Augmented, High-Velocity Systems Architect specializing in ethical AI development, AI for kids, and rapid AI prototyping",
     url: "https://coderandom-architect-workshop.vercel.app",
     sameAs: ["https://github.com/CodeRandomMC"],
+    image:
+      "https://coderandom-architect-workshop.vercel.app/kids-ai/welcome_screen.png",
     knowsAbout: [
       "Ethical AI",
       "AI for Kids",
@@ -114,7 +121,30 @@ export default function RootLayout({
       name: "AI Systems Architect",
       description:
         "Designing and building robust, safe, and scalable AI systems",
+      occupationalCategory: "Software Development",
     },
+    worksFor: {
+      "@type": "Organization",
+      name: "Freelance AI Systems Architect",
+    },
+    alumniOf: {
+      "@type": "EducationalOrganization",
+      name: "Self-Taught AI Specialist",
+    },
+  };
+
+  const websiteStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Jack Pollard - AI Systems Architect Portfolio",
+    url: "https://coderandom-architect-workshop.vercel.app",
+    description:
+      "Portfolio showcasing ethical AI development, AI for kids projects, and high-velocity AI prototyping",
+    author: {
+      "@type": "Person",
+      name: "Jack Pollard",
+    },
+    inLanguage: "en-US",
   };
 
   return (
@@ -142,6 +172,18 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(structuredData),
           }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteStructuredData),
+          }}
+        />
+        <meta name="theme-color" content="#0a0a0a" />
+        <meta name="msapplication-TileColor" content="#0a0a0a" />
+        <link
+          rel="canonical"
+          href="https://coderandom-architect-workshop.vercel.app"
         />
       </head>
       <body className="font-body antialiased">

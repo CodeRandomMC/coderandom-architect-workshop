@@ -23,6 +23,46 @@ const nextConfig: NextConfig = {
   trailingSlash: false,
   generateEtags: false,
   compress: true,
+
+  // Redirect configuration to prevent redirect loops
+  async redirects() {
+    return [
+      {
+        source: "/index.html",
+        destination: "/",
+        permanent: true,
+      },
+      {
+        source: "/index",
+        destination: "/",
+        permanent: true,
+      },
+    ];
+  },
+
+  // Headers for SEO
+  async headers() {
+    return [
+      {
+        source: "/(.*)",
+        headers: [
+          {
+            key: "X-Robots-Tag",
+            value:
+              "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+          },
+          {
+            key: "X-Content-Type-Options",
+            value: "nosniff",
+          },
+          {
+            key: "X-Frame-Options",
+            value: "DENY",
+          },
+        ],
+      },
+    ];
+  },
 };
 
 export default nextConfig;
