@@ -3,7 +3,7 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/next";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://coderandom-architect-workshop.vercel.app"),
+  metadataBase: new URL("https://www.coderandom.com"),
   alternates: {
     canonical: "/",
   },
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     title: "Jack Pollard | AI Systems Architect & Ethical AI Developer",
     description:
       "Expert AI-augmented systems architect specializing in ethical AI development, AI for kids, rapid AI prototyping, and safe AI systems. Portfolio showcasing KidsAI mission project and high-velocity development capabilities.",
-    url: "https://coderandom-architect-workshop.vercel.app",
+    url: "https://www.coderandom.com",
     siteName: "Jack Pollard - Architect's Workshop",
     images: [
       {
@@ -103,10 +103,9 @@ export default function RootLayout({
     jobTitle: "AI Systems Architect",
     description:
       "AI-Augmented, High-Velocity Systems Architect specializing in ethical AI development, AI for kids, and rapid AI prototyping",
-    url: "https://coderandom-architect-workshop.vercel.app",
+    url: "https://www.coderandom.com",
     sameAs: ["https://github.com/CodeRandomMC"],
-    image:
-      "https://coderandom-architect-workshop.vercel.app/kids-ai/welcome_screen.png",
+    image: "https://www.coderandom.com/kids-ai/welcome_screen.png",
     knowsAbout: [
       "Ethical AI",
       "AI for Kids",
@@ -138,7 +137,7 @@ export default function RootLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "Jack Pollard - AI Systems Architect Portfolio",
-    url: "https://coderandom-architect-workshop.vercel.app",
+    url: "https://www.coderandom.com",
     description:
       "Portfolio showcasing ethical AI development, AI for kids projects, and high-velocity AI prototyping",
     author: {
@@ -182,10 +181,7 @@ export default function RootLayout({
         />
         <meta name="theme-color" content="#0a0a0a" />
         <meta name="msapplication-TileColor" content="#0a0a0a" />
-        <link
-          rel="canonical"
-          href="https://coderandom-architect-workshop.vercel.app"
-        />
+        <link rel="canonical" href="https://www.coderandom.com" />
       </head>
       <body className="font-body antialiased">
         {children}

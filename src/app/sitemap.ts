@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = "https://coderandom-architect-workshop.vercel.app";
+  const baseUrl = "https://www.coderandom.com";
   const currentDate = new Date().toISOString();
 
   return [

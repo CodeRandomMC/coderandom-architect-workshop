@@ -8,7 +8,7 @@ Disallow: /admin/
 Crawl-delay: 1
 
 # Sitemap location
-Sitemap: https://coderandom-architect-workshop.vercel.app/sitemap.xml
+Sitemap: https://www.coderandom.com/sitemap.xml
 
 # Additional directives for better SEO
 User-agent: Googlebot
