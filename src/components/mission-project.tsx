@@ -17,11 +17,11 @@ export function MissionProject() {
       images={[
         {
           src: "/kids-ai/welcome_screen.png",
-          alt: "KidsAI Welcome Screen - Safe AI playground for children",
+          alt: "KidsAI Welcome Screen - Safe AI playground for children featuring ethical AI development and child-appropriate interactions",
         },
         {
           src: "/kids-ai/the_mission.png",
-          alt: "KidsAI Mission Statement - Empowering creativity through AI",
+          alt: "KidsAI Mission Statement - Empowering creativity through ethical AI for kids with safety-first design principles",
         },
       ]}
       backgroundColor="muted"

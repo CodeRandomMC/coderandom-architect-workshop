@@ -1,19 +1,37 @@
-# Jack Pollard | Architect's Workshop
+# Jack Pollard | AI Systems Architect Portfolio - Ethical AI & Rapid Prototyping
 
-> **⚡ Built in <12 hours** - A demonstration of rapid AI application development and modern web architecture
-> Open [CodeRandom](http://coderandom.com) to view my portfolio.
+> **⚡ Built in <12 hours** - A demonstration of rapid AI application development, ethical AI practices, and modern web architecture
+>
+> 🌐 **Live Portfolio**: [CodeRandom Architect Workshop](https://coderandom-architect-workshop.vercel.app)
+>
+> 🔗 **Main Portfolio**: [CodeRandom.com](https://www.coderandom.com)
 
-This portfolio showcases my ability to rapidly prototype and deploy full-stack AI applications, featuring my mission project "Life Co-Pilot" and the KidsAI implementation.
+## 🎯 About This Portfolio
 
-## 🎯 Project Goals
+This portfolio showcases expertise in **ethical AI development**, **AI for kids**, **rapid AI prototyping**, and high-velocity systems architecture. Featuring the mission-driven **KidsAI project** and **VelocityAI architecture reviewer**, this repository demonstrates:
 
-This project was built to demonstrate:
+- **Ethical AI Development**: Building safe, responsible AI systems with safety-first design principles
+- **AI for Kids**: Child-safe AI platforms with comprehensive safety protocols and age-appropriate interactions
+- **Rapid AI Prototyping**: Complete AI applications developed in hours using modern development practices
+- **Systems Architecture**: Full-stack AI application architecture with scalable, production-ready implementations
 
-- **Rapid Development Skills**: Complete portfolio + AI project in under 12 hours
-- **Technical Proficiency**: Modern full-stack development with production-ready code
-- **AI-First Mindset**: Building helpful, harmless, and honest AI applications
+## 🚀 Featured Projects
 
-## 🚀 What Was Built in 12 Hours
+### 🧒 KidsAI Mission Project - Ethical AI for Children
+
+- **Safe AI Playground**: Child-appropriate AI interactions with comprehensive safety measures
+- **Ethical AI Framework**: Two-stage guardian pipeline ensuring child safety and trust
+- **AI Safety by Design**: Stateless architecture eliminating attack surfaces
+- **Responsible AI Development**: Demonstrates commitment to AI ethics and child protection
+
+### ⚡ VelocityAI Architecture Reviewer - AI Prototyping Co-Pilot
+
+- **High-Velocity Development**: AI co-pilot for systems architecture built in hours
+- **Local & Cloud LLM Support**: Flexible AI integration supporting various deployment models
+- **Production-Ready**: Full-stack Python application with export capabilities
+- **AI-Augmented Development**: Showcases rapid prototyping and iterative development skills
+
+## 🎯 Technical Excellence in Under 12 Hours
 
 ### Portfolio Website
 

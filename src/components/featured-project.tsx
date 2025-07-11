@@ -13,15 +13,15 @@ export function FeaturedProject() {
       images={[
         {
           src: "/velocity-ai/velocity_ai.png",
-          alt: "VelocityAI main interface",
+          alt: "VelocityAI main interface showcasing AI prototyping and rapid development capabilities for systems architecture",
         },
         {
           src: "/velocity-ai/local_llm_support.png",
-          alt: "Local LLM support feature",
+          alt: "VelocityAI local LLM support feature demonstrating AI co-pilot functionality and ethical AI development practices",
         },
         {
           src: "/velocity-ai/export_showcase.png",
-          alt: "Export functionality showcase",
+          alt: "VelocityAI export functionality showcase highlighting high-velocity development and AI-augmented systems architecture",
         },
       ]}
     />

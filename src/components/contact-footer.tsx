@@ -21,8 +21,15 @@ export function ContactFooter() {
           ))}
         </div>
         <p className="text-sm text-muted-foreground/60">
-          &copy; {new Date().getFullYear()} Jack Pollard. All Rights Reserved. |
-          CodeRandom.com
+          &copy; {new Date().getFullYear()} Jack Pollard. All Rights Reserved. |{" "}
+          <a
+            href="https://www.coderandom.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-primary transition-colors"
+          >
+            CodeRandom.com
+          </a>
         </p>
       </div>
     </footer>

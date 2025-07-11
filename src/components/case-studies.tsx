@@ -12,21 +12,21 @@ const caseStudies = [
   {
     title: "The LLM Guardian Cluster",
     description:
-      "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability.",
+      "A foundational whitepaper on a distributed, multi-agent architecture for ensuring AI safety and reliability. This ethical AI framework demonstrates advanced AI prototyping techniques for building responsible AI systems with robust safety mechanisms.",
     pdfUrl: "#",
     github: "https://github.com/CodeRandomMC/LLMGuardian",
   },
   {
     title: "KidsAI Safety Architecture",
     description:
-      "A proof-of-concept for building AI systems worthy of a child's trust. Features a two-stage guardian pipeline, stateless design, and safety-by-design architecture that eliminates attack surfaces rather than filtering them.",
+      "A proof-of-concept for building ethical AI systems worthy of a child's trust. Features a two-stage guardian pipeline, stateless design, and safety-by-design architecture that eliminates attack surfaces rather than filtering them. Demonstrates AI for kids development with comprehensive safety protocols.",
     pdfUrl: "#",
     github: "https://github.com/CodeRandomMC/KidsAI",
   },
   {
     title: "The Medical Guardian",
     description:
-      "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support.",
+      "Architectural plan for a secure, HIPAA-compliant AI system for medical data analysis and diagnostic support. Showcases ethical AI development practices in healthcare with emphasis on privacy, safety, and responsible AI deployment in sensitive environments.",
     pdfUrl: "#",
     github: "https://github.com/CodeRandomMC/MedicalDiagnosticGuardian",
   },
@@ -36,9 +36,15 @@ export function CaseStudies() {
   return (
     <section id="case-studies" className="py-20 md:py-28 bg-card/50">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-primary">
-          Architectural Case Studies
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-6 text-primary">
+          Ethical AI & Safety Architecture Case Studies
         </h2>
+        <p className="text-center text-lg text-muted-foreground mb-12 max-w-3xl mx-auto">
+          Explore comprehensive case studies showcasing ethical AI development,
+          AI for kids safety protocols, and rapid AI prototyping methodologies.
+          Each project demonstrates responsible AI practices and innovative
+          solutions for complex challenges.
+        </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {caseStudies.map((study, index) => (
             <Card
