@@ -4,6 +4,7 @@ import { Toaster } from "@/components/ui/toaster";
 import { Inter } from "next/font/google";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import { MainNav } from "@/components/main-nav";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,12 +13,12 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+  title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
   description:
-    "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
+    "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, electronics projects, and soon tutorials, blog posts, and maker tools.",
   keywords: [
     "CodeRandom",
-    "maker portfolio",
+    "maker platform",
     "AI experiments",
     "robotics projects",
     "electronics projects",
@@ -32,10 +33,16 @@ export const metadata: Metadata = {
     "maker community",
     "DIY electronics",
     "open source projects",
+    "tutorials",
+    "tech blog",
+    "maker store",
+    "innovation platform",
+    "coding tutorials",
+    "electronics guides",
   ],
   authors: [{ name: "Jack Pollard" }],
   creator: "Jack Pollard",
-  publisher: "Jack Pollard",
+  publisher: "CodeRandom",
   category: "Technology",
   classification: "AI Systems Architecture",
   formatDetection: {
@@ -51,17 +58,17 @@ export const metadata: Metadata = {
     google: "verification-token-will-be-added-later",
   },
   openGraph: {
-    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+    title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
     description:
-      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
+      "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, electronics projects, and soon tutorials, blog posts, and maker tools.",
     url: "https://www.coderandom.com",
-    siteName: "CodeRandom - Maker Portfolio",
+    siteName: "CodeRandom - Where Code Meets Innovation",
     images: [
       {
         url: "/coderandom-hero.png",
         width: 1200,
         height: 630,
-        alt: "CodeRandom - Maker Portfolio",
+        alt: "CodeRandom - Where Code Meets Innovation",
       },
     ],
     locale: "en_US",
@@ -69,9 +76,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+    title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
     description:
-      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects.",
+      "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, and electronics projects.",
     images: ["/coderandom-hero.png"],
   },
   robots: {
@@ -124,7 +131,7 @@ export default function RootLayout({
     },
     worksFor: {
       "@type": "Organization",
-      name: "Independent Maker",
+      name: "CodeRandom",
     },
     alumniOf: {
       "@type": "EducationalOrganization",
@@ -135,15 +142,29 @@ export default function RootLayout({
   const websiteStructuredData = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    name: "CodeRandom - Maker Portfolio",
+    name: "CodeRandom - Where Code Meets Innovation",
     url: "https://www.coderandom.com",
     description:
-      "Maker portfolio showcasing AI experiments, robotics prototypes, and electronics projects",
+      "A platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, electronics projects, and soon tutorials, blog posts, and maker tools.",
     author: {
       "@type": "Person",
       name: "Jack Pollard",
     },
     inLanguage: "en-US",
+  };
+
+  const organizationStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "CodeRandom",
+    url: "https://www.coderandom.com",
+    description: "Where Code Meets Innovation - A platform for makers, developers, and innovators",
+    logo: "https://www.coderandom.com/coderandom-hero.png",
+    sameAs: ["https://github.com/CodeRandomMC"],
+    founder: {
+      "@type": "Person",
+      name: "Jack Pollard",
+    },
   };
 
   return (
@@ -178,11 +199,18 @@ export default function RootLayout({
             __html: JSON.stringify(websiteStructuredData),
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationStructuredData),
+          }}
+        />
         <meta name="theme-color" content="#0a0a0a" />
         <meta name="msapplication-TileColor" content="#0a0a0a" />
         <link rel="canonical" href="https://www.coderandom.com" />
       </head>
       <body className="font-body antialiased">
+        <MainNav />
         {children}
         <Toaster />
         <SpeedInsights />

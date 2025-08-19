@@ -1,19 +1,19 @@
 import { HeroSection } from "@/components/hero-section";
 import { ProjectsSection } from "@/components/projects-section";
-import { WorkshopSection } from "@/components/workshop-section";
+import { BlogSection } from "@/components/blog-section";
+import { TutorialsSection } from "@/components/tutorials-section";
 import { AboutMe } from "@/components/about-me";
 import { ContactSection } from "@/components/contact-section";
 import { ContactFooter } from "@/components/contact-footer";
-import { FloatingNav } from "@/components/floating-nav";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+  title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
   description:
-    "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
+    "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, electronics projects, tutorials, blog posts, and maker tools.",
   keywords: [
     "CodeRandom",
-    "maker portfolio",
+    "maker platform",
     "AI experiments",
     "robotics projects",
     "electronics projects",
@@ -24,35 +24,38 @@ export const metadata: Metadata = {
     "prototype development",
     "embedded systems",
     "IoT projects",
+    "tutorials",
+    "tech blog",
+    "maker store",
+    "innovation platform",
+    "coding tutorials",
+    "electronics guides",
   ],
   openGraph: {
-    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+    title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
     description:
-      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
+      "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, electronics projects, tutorials, blog posts, and maker tools.",
     images: [
       {
         url: "/coderandom-hero.png",
         width: 1200,
         height: 630,
-        alt: "CodeRandom Maker Portfolio",
+        alt: "CodeRandom - Where Code Meets Innovation",
       },
     ],
   },
   twitter: {
-    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
+    title: "CodeRandom | Where Code Meets Innovation - AI, Robotics & Electronics",
     description:
-      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects.",
+      "CodeRandom is a platform for makers, developers, and innovators. Explore AI experiments, robotics prototypes, and electronics projects.",
   },
 };
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen bg-background">
-      <FloatingNav />
       <main className="flex-grow">
         <HeroSection />
-        <ProjectsSection />
-        <WorkshopSection />
         <AboutMe />
         <ContactSection />
       </main>

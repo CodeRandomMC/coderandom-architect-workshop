@@ -1,4 +1,4 @@
-# Jack Pollard | AI Systems Architect Portfolio - Ethical AI & Rapid Prototyping
+# CodeRandom | Where Code Meets Innovation
 
 > **⚡ Built in <12 hours** - A demonstration of rapid AI application development, ethical AI practices, and modern web architecture
 >
@@ -6,16 +6,16 @@
 >
 > 🔗 **Main Portfolio**: [CodeRandom.com](https://www.coderandom.com)
 
-## 🎯 About This Portfolio
+## 🎯 About CodeRandom
 
-This portfolio showcases expertise in **ethical AI development**, **AI for kids**, **rapid AI prototyping**, and high-velocity systems architecture. Featuring the mission-driven **KidsAI project** and **VelocityAI architecture reviewer**, this repository demonstrates:
+CodeRandom is evolving from a personal portfolio into a comprehensive platform for makers, developers, and innovators. This repository showcases the foundation of a platform that will soon include:
 
-- **Ethical AI Development**: Building safe, responsible AI systems with safety-first design principles
-- **AI for Kids**: Child-safe AI platforms with comprehensive safety protocols and age-appropriate interactions
-- **Rapid AI Prototyping**: Complete AI applications developed in hours using modern development practices
-- **Systems Architecture**: Full-stack AI application architecture with scalable, production-ready implementations
+- **📚 Tutorials & Guides**: Step-by-step tutorials for AI, robotics, and electronics projects
+- **✍️ Tech Blog**: In-depth articles about the latest in AI, robotics, and maker culture  
+- **🛒 Maker Store**: Curated selection of tools, components, and kits for makers
+- **🤝 Community**: Building a vibrant ecosystem of makers and innovators
 
-## 🚀 Featured Projects
+## 🚀 Current Features
 
 ### 🧒 KidsAI Mission Project - Ethical AI for Children
 
@@ -33,7 +33,7 @@ This portfolio showcases expertise in **ethical AI development**, **AI for kids*
 
 ## 🎯 Technical Excellence in Under 12 Hours
 
-### Portfolio Website
+### Platform Website
 
 - ✅ Modern Next.js 15 application with TypeScript
 - ✅ Responsive design with Tailwind CSS + Radix UI components
@@ -42,6 +42,7 @@ This portfolio showcases expertise in **ethical AI development**, **AI for kids*
 - ✅ Performance optimized with Next.js Image optimization
 - ✅ Interactive carousel for project showcases
 - ✅ Contact forms with validation using React Hook Form + Zod
+- ✅ Brand-focused design emphasizing CodeRandom platform vision
 
 ### KidsAI Project
 
@@ -61,6 +62,26 @@ This portfolio showcases expertise in **ethical AI development**, **AI for kids*
 - **Carousel:** Embla Carousel
 - **Deployment:** Vercel-ready
 
+## 🚀 Platform Roadmap
+
+### Phase 1: Foundation ✅
+- [x] Brand identity and platform vision
+- [x] Portfolio showcase with project highlights
+- [x] Responsive design and modern UI
+- [x] SEO optimization and metadata
+
+### Phase 2: Content Platform (Coming Soon)
+- [ ] Tutorial system with step-by-step guides
+- [ ] Blog platform with tech articles
+- [ ] User authentication and profiles
+- [ ] Content management system
+
+### Phase 3: Community & Commerce (Future)
+- [ ] Maker store with curated products
+- [ ] Community forums and discussions
+- [ ] Project sharing and collaboration
+- [ ] Educational courses and workshops
+
 ## 🔧 Next Steps (Post 12-Hour Sprint)
 
 - [ ] Integrate Claude API for AI functionality
@@ -69,6 +90,7 @@ This portfolio showcases expertise in **ethical AI development**, **AI for kids*
 - [ ] Implement user authentication and data persistence
 - [ ] Add analytics and monitoring
 - [ ] Scale for production deployment
+- [ ] Launch tutorial and blog sections
 
 ## 🏃‍♂️ Running Locally
 
@@ -86,11 +108,11 @@ pnpm build
 pnpm typecheck
 ```
 
-Open [http://localhost:9002](http://localhost:9002) to view the portfolio.
+Open [http://localhost:9002](http://localhost:9002) to view the platform.
 
 ## 📞 Contact
 
-**Jack Pollard** - AI-Augmented, High-Velocity Systems Architect
+**Jack Pollard** - Founder of CodeRandom
 
 - 📧 Email: jack@coderandom.com
 - 💼 LinkedIn: [https://www.linkedin.com/in/jack-pollard-632362374/](https://www.linkedin.com/in/jack-pollard-632362374/)
@@ -98,4 +120,4 @@ Open [http://localhost:9002](http://localhost:9002) to view the portfolio.
 
 ---
 
-_"My mission is to create AI that doesn't replace human potential, but amplifies it."_
+_"Where Code Meets Innovation - Building the future of maker culture, one project at a time."_
