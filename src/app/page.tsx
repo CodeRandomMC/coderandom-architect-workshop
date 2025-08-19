@@ -1,7 +1,6 @@
-import { Introduction } from "@/components/introduction";
-import { MissionProject } from "@/components/mission-project";
-import { FeaturedProject } from "@/components/featured-project";
-import { CaseStudies } from "@/components/case-studies";
+import { HeroSection } from "@/components/hero-section";
+import { ProjectsSection } from "@/components/projects-section";
+import { WorkshopSection } from "@/components/workshop-section";
 import { AboutMe } from "@/components/about-me";
 import { ContactSection } from "@/components/contact-section";
 import { ContactFooter } from "@/components/contact-footer";
@@ -9,43 +8,40 @@ import { FloatingNav } from "@/components/floating-nav";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title:
-    "Jack Pollard | AI Systems Architect Portfolio - Ethical AI & AI for Kids",
+  title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
   description:
-    "Explore Jack Pollard's portfolio featuring KidsAI mission project, VelocityAI architecture reviewer, and expertise in ethical AI development, AI for kids, and rapid AI prototyping. Demonstrating high-velocity development and AI safety practices.",
+    "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
   keywords: [
-    "Jack Pollard portfolio",
-    "AI systems architect portfolio",
-    "ethical AI projects",
-    "AI for kids portfolio",
-    "KidsAI project",
-    "VelocityAI project",
-    "AI prototyping examples",
-    "responsible AI development",
-    "AI safety portfolio",
-    "high velocity development showcase",
-    "AI co-pilot development",
-    "Claude API projects",
+    "CodeRandom",
+    "maker portfolio",
+    "AI experiments",
+    "robotics projects",
+    "electronics projects",
+    "ESP32 projects",
+    "AI chatbots",
+    "maker tools",
+    "hardware projects",
+    "prototype development",
+    "embedded systems",
+    "IoT projects",
   ],
   openGraph: {
-    title:
-      "Jack Pollard | AI Systems Architect Portfolio - Ethical AI & AI for Kids",
+    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
     description:
-      "Explore Jack Pollard's portfolio featuring KidsAI mission project, VelocityAI architecture reviewer, and expertise in ethical AI development, AI for kids, and rapid AI prototyping.",
+      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects. From chatbots to ESP32 builds, exploring the intersection of code and hardware.",
     images: [
       {
-        url: "/kids-ai/welcome_screen.png",
+        url: "/coderandom-hero.png",
         width: 1200,
         height: 630,
-        alt: "KidsAI Project - Safe AI for Children",
+        alt: "CodeRandom Maker Portfolio",
       },
     ],
   },
   twitter: {
-    title:
-      "Jack Pollard | AI Systems Architect Portfolio - Ethical AI & AI for Kids",
+    title: "CodeRandom | Maker Portfolio - AI, Robotics & Electronics",
     description:
-      "Explore Jack Pollard's portfolio featuring KidsAI mission project, VelocityAI architecture reviewer, and expertise in ethical AI development.",
+      "Jack's maker portfolio featuring AI experiments, robotics prototypes, and electronics projects.",
   },
 };
 
@@ -54,10 +50,9 @@ export default function Home() {
     <div className="flex flex-col min-h-screen bg-background">
       <FloatingNav />
       <main className="flex-grow">
-        <Introduction />
-        <MissionProject />
-        <FeaturedProject />
-        <CaseStudies />
+        <HeroSection />
+        <ProjectsSection />
+        <WorkshopSection />
         <AboutMe />
         <ContactSection />
       </main>

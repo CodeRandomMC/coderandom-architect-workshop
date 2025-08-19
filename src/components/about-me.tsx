@@ -13,59 +13,55 @@ export function AboutMe() {
           </div>
           <div className="max-w-2xl mx-auto lg:mx-0 text-left">
             <div className="mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">My Journey: Forged in Chaos, Focused on Stability</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-primary">The Maker's Journey</h2>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  My path to technology wasn't linear or formal. It was a decade-long, self-directed apprenticeship driven by necessity and a deep-seated need to build. It started with Minecraft modding and Discord bots and evolved through web architecture and blockchain, all while working demanding manual labor jobs.
+                  I never followed the traditional path. Instead, I learned by experimenting, breaking things, and rebuilding them. My projects span AI, robotics, electronics, and tools for other makers. I believe in rapid prototyping, sharing openly, and pushing the boundaries of what's possible with code + hardware.
                 </p>
                 <p>
-                  Growing up in a chaotic environment taught me two invaluable lessons that no university could:
+                  My journey started with curiosity and a soldering iron. From simple LED circuits to complex AI systems, I've always been driven by the question "What if I could build that?" rather than "Should I build that?"
                 </p>
-                <ol className="list-decimal list-inside space-y-2 pl-2">
-                  <li><strong>How to find the single point of failure in any system.</strong> My survival instinct became my red-teaming instinct. I learned to take nothing at face value and to instinctively search for the hidden vulnerability.</li>
-                  <li><strong>How to build something stable and reliable from scratch.</strong> When you have no safety nets, you learn to weave your own.</li>
-                </ol>
                 <p>
-                  When modern AI arrived, I realized it wasn't just another tool. It was a force multiplier for my mind—a way to translate my rapid, intuitive thinking into the formal, robust language of systems architecture.
+                  What I lack in formal education, I make up for in hands-on experience. Every project teaches me something new, and every failure is just a step toward the next breakthrough. This iterative approach has become my signature style.
                 </p>
               </div>
             </div>
 
             <div className="mb-12">
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">My Workflow: The AI-Augmented Architect</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">My Approach: Rapid Prototyping & Open Sharing</h3>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  I felt like an imposter because I don't store every framework and API in my head. I now know my strength isn't in memorization; it's in orchestration. I've pioneered a personal workflow that turns me into a one-person design firm.
+                  I believe the best way to learn is by doing, and the best way to improve is by sharing. That's why I open-source most of my projects and document my failures as much as my successes.
                 </p>
                 <p>
-                  My process is a tight, rapid loop:
+                  My workflow is simple but effective:
                 </p>
                 <ol className="list-decimal list-inside space-y-2 pl-2">
-                  <li><strong>Conceptualize:</strong> A high-velocity idea for a system.</li>
-                  <li><strong>Blueprint:</strong> Use my AI toolset to instantly draft a V1 architectural plan.</li>
-                  <li><strong>Critique:</strong> Feed that blueprint into my own custom-built AI "Senior Architect" for an immediate, ruthless, and insightful review.</li>
-                  <li><strong>Iterate:</strong> Refine the design with expert-level feedback in minutes, not months.</li>
+                  <li><strong>Ideate:</strong> Start with a problem I want to solve or something I want to learn.</li>
+                  <li><strong>Prototype:</strong> Build a quick, functional version to test the concept.</li>
+                  <li><strong>Iterate:</strong> Refine based on what works and what doesn't.</li>
+                  <li><strong>Share:</strong> Document the process and share the code for others to build upon.</li>
                 </ol>
                 <p>
-                  The <strong>VelocityAI Architecture Reviewer</strong> on my GitHub is a tangible product of this exact workflow. I don't just use tools; I build meta-tools that improve the very process of creation.
+                  This approach has led me from simple Arduino projects to complex AI systems, always with the goal of making technology more accessible and useful for other makers.
                 </p>
               </div>
             </div>
 
             <div>
-              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">My Mission: The Life Co-pilot</h3>
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-primary">The Maker Community</h3>
               <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                 <p>
-                  My work became deeply personal when my son was born. I saw his future and the world of AI he would inherit, and my mission crystallized.
+                  I'm passionate about the maker movement because it represents everything I believe in: learning by doing, sharing knowledge, and using technology to solve real problems.
                 </p>
                 <p>
-                  My ultimate goal is to apply my skills to build what I call the <strong>"Life Co-pilot"</strong>—a verifiably safe, factually grounded, and deeply supportive AI companion for children growing up in adversity. It's an AI designed to be the stable, encouraging voice that many, including myself, never had.
+                  Whether it's helping someone debug their first Arduino project or collaborating on a complex robotics build, I love being part of a community that values experimentation and innovation.
                 </p>
                 <p>
-                  This is the reason I am so fiercely dedicated to AI safety. The systems we build must be worthy of the trust our children will place in them. This is more than a career for me. It is the work I was built to do.
+                  My goal is to inspire others to start their own maker journey, regardless of their background or experience level. Everyone starts somewhere, and the best time to begin is now.
                 </p>
                 <p className="font-semibold text-foreground">
-                  If you are working on hard problems that require a different way of thinking, I would love to connect.
+                  If you're working on something interesting or want to collaborate on a project, I'd love to hear from you. Let's build something amazing together.
                 </p>
               </div>
             </div>

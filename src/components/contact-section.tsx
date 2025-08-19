@@ -66,10 +66,9 @@ export function ContactSection() {
     <section id="contact" className="py-20 bg-muted/20">
       <div className="container mx-auto px-4">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6">Let's Build Something Together</h2>
           <p className="text-lg text-muted-foreground mb-8">
-            Ready to discuss your next project or have questions about
-            cybersecurity? I'd love to hear from you.
+            I'd love to collaborate on robotics, AI, or maker projects. Reach out if you're building something cool.
           </p>
 
           <Dialog open={isOpen} onOpenChange={setIsOpen}>
